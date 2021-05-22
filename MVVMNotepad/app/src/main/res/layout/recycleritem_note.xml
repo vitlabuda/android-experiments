@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/recycleritem_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingBottom="1dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/recycleritem_note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_below="@id/recycleritem_note_title"
+            android:layout_alignStart="@id/recycleritem_note_title"
+            android:paddingBottom="1dp" />
+
+        <TextView
+            android:id="@+id/recycleritem_note_lastmodified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last modified"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@id/recycleritem_note_text"
+            android:layout_alignStart="@id/recycleritem_note_text"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>
