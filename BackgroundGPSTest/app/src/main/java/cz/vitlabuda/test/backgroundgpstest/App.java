@@ -12,6 +12,7 @@ public class App extends Application {
 
     public static final int GPS_SCAN_INTERVAL = 1000; // milliseconds; must be non-zero
     public static final int GPS_SCAN_DISTANCE_THRESHOLD = 1; // meters; can be zero
+    public static final int WIFI_SCAN_INTERVAL = 5000; // milliseconds; interval < 30000ms is working properly only if the wifi scan throttling is turned off in the developer settings
 
     @Override
     public void onCreate() {
